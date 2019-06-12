@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>padaria</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description></description>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>br.com.padaria.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<!-- mapeando a URL CadastroContato -->
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<servlet-name>CadastrarUsuario</servlet-name>
+		<servlet-class>br.com.padaria.controller.CadastrarUsuario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastrarUsuario</servlet-name>
+		<!-- mapeando a URL CadastroContato -->
+		<url-pattern>/cadastrarUsuario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<servlet-name>CadastrarFuncionario</servlet-name>
+		<servlet-class>br.com.padaria.controller.CadastrarFuncionario</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastrarFuncionario</servlet-name>
+		<!-- mapeando a URL CadastroContato -->
+		<url-pattern>/cadastrarFuncionario</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<servlet-name>Home</servlet-name>
+		<servlet-class>br.com.padaria.controller.Home</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<!-- mapeando a URL-->
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<servlet-name>CadastrarCategoria</servlet-name>
+		<servlet-class>br.com.padaria.controller.CadastrarCategoria</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastrarCategoria</servlet-name>
+		<!-- mapeando a URL CadastroContato -->
+		<url-pattern>/categoria</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+            <filter-name>FiltroPaginas</filter-name>
+            <filter-class>br.com.padaria.controller.FiltroPaginas</filter-class>
+        </filter>
+
+        <filter-mapping>
+            <filter-name>FiltroPaginas</filter-name>
+            <url-pattern>/resources/*</url-pattern>
+        </filter-mapping>
+
+
+
+
+
+</web-app>

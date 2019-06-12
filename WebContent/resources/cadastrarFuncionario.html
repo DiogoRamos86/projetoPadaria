@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cadastrarFuncionario</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript"  src=js/funcionario.js></script>
+
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body style="background-image: url(../images/cadra01.jpg);">
+	 <header class="heading"> Cadastrar Funcionários</header>
+	<div class="nav-side-menu">
+    <div class="brand">Pão de Mel</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  		
+  			
+  		
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="index.html">
+                  <i class="fa fa-home fa-lg"></i> Ínicio
+                  </a>
+                </li>
+
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-users fa-lg"></i>Usúarios</a>
+                </li>
+              	
+              	<li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-users fa-lg"></i> Funcionários</a>
+                </li>
+                
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="categoria.html"><i class="fa fa-leaf fa-lg"></i>  Categorias</a>
+                </li>
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-cube fa-lg"></i> Cadastrar Produtos</a>
+                </li>  
+               
+
+
+                <li>
+                  <a href="#"><i class="fa fa-money fa-lg"></i> Vendas </a>
+                </li>
+                
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-file-pdf-o fa-lg"></i> Relatórios
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-cubes fa-lg"></i> Estoque
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+
+<div class="container-formcad" id="cadastrarFuncionario">
+	
+	<!---Form starting----> 
+	<div class="row ">
+	 <!--- For Name---->
+         <div class="col-sm-12">
+             <div class="row">
+			     <div class="col-xs-3">
+          	         <label class="firstname"> Nome :</label> </div>
+		         <div class="col-xs-9">
+		             <input type="text" name="c" id="fname"  class="form-control ">
+             </div>
+		      </div>
+		 </div>
+
+
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-3">
+                     <label class="lastname">Sobrenome :</label></div>
+				<div class ="col-xs-9" >	 
+		             <input type="text" name="lname" id="lname"  class="form-control " >
+                </div>
+		     </div>
+		 </div>
+
+		      
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-3">
+		             <label class=mail >Função :</label></div>
+			     <div class="col-xs-9"	>	 
+			          <input type="text" name="email"  id="email" class="form-control"  >
+		         </div>
+		     </div>
+		 </div>
+s
+         
+
+		 
+ 	</div>
+ 	 <div class="col-sm-12">
+		         <button class="btn btn-warning" onclick="SENAI.funcionario.cadastrar()">Salvar</button>
+		   </div>
+</div>
+</body>
+</html>
