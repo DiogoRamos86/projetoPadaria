@@ -39,7 +39,7 @@ public class CadastrarFuncionario extends HttpServlet {
 		
 		funci.setNome(request.getParameter("fname"));
 		funci.setSobrenome(request.getParameter("lname"));
-		funci.setFuncao(request.getParameter("funcao"));
+		funci.setFuncao(request.getParameter("email"));
 		
 		Conexao conec = new Conexao();
 

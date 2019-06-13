@@ -22,7 +22,7 @@ $(document)
 					$.ajax({
 						
 						type : "POST",
-						url : "../cadastrarFuncionario",
+						url : "../../cadastrarFuncionario",
 						data : $("#cadastrarFuncionario").serialize(), 
 						success : function(msg) {
 							var cfg = {

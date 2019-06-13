@@ -1,6 +1,11 @@
 SENAI = new Object();
 
 
+$(document).ready(function() {
+	$("#cadastrarFuncionario").load("resources/usuario/cadastrarFuncionario.html");
+});
+
+
 
 //inicio evento do botão
 function usuario() {

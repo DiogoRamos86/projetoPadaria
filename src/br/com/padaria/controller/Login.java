@@ -100,7 +100,7 @@ public class Login extends HttpServlet {
 			HttpSession sessao = request.getSession();
 			sessao.setAttribute("usuAutenticado", usuAutenticado);
 			
-			response.sendRedirect("http://localhost:8081/padaria/resources/index.html");
+			response.sendRedirect("http://localhost:8081/padaria/resources/usuario/index.html");
 			
 			
 		}else {
